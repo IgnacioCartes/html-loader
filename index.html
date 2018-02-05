@@ -1,0 +1,22 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Loader</title>
+		<script type="text/javascript" src="loader.js"></script>
+	</head>
+	<body>
+			<button id="btn-launch">Launch loader for 2 seconds</button>
+			<script type="text/javascript">
+				
+				document.getElementById('btn-launch').addEventListener('click', function() {
+					// start loader
+					_LOADER.start();
+					
+					// add a timer to stop loader after 2 seconds (2000 ms)
+					setTimeout(_LOADER.stop, 2000);
+
+				});
+				
+			</script>
+	</body>	
+</html>
